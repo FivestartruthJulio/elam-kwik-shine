@@ -1,0 +1,44 @@
+# Ad research configuration.
+# Edit keywords freely: each keyword becomes one Facebook Ad Library search.
+# Cost ≈ $0.75 per 1,000 ads scraped (Apify curious_coder actor).
+# ads_per_keyword × number of keywords ≈ ads per run.
+
+country = "US"            # Ad Library country filter
+ads_per_keyword = 100     # max ads pulled per keyword search
+active_only = true        # only ads still running (still running = still working)
+proven_days = 30          # ads running at least this many days are flagged "proven"
+
+[verticals.medicare]
+label = "Medicare"
+primary = true
+keywords = [
+  "medicare advantage",
+  "turning 65",
+  "medicare benefits",
+  "$0 premium",
+  "part b giveback",
+  "medicare dental vision hearing",
+  "grocery allowance",
+  "medicare supplement",
+  "otc card medicare",
+]
+
+[verticals.final_expense]
+label = "Final Expense / Life"
+keywords = [
+  "final expense",
+  "burial insurance",
+  "life insurance seniors",
+  "funeral costs",
+  "whole life insurance no exam",
+]
+
+[verticals.aca]
+label = "ACA / Health Insurance"
+keywords = [
+  "obamacare",
+  "aca health insurance",
+  "health insurance marketplace",
+  "$0 health insurance",
+  "health insurance subsidy",
+]
